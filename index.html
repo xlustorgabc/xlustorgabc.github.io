@@ -100,7 +100,7 @@ h1 span {
 }
 
 h1::after {
-	animation: txt 1.5s infinite;
+	animation: txt 1s infinite;
 	content: "";
 }
 
@@ -148,6 +148,15 @@ h1::after {
   bottom: 5px;
   left: calc(50% - 117px);
 }
+
+@media all and (max-width: 768px) {
+  html, body {
+      overflow-x: hidden;
+  }
+  body {
+      position: relative;
+  }
+}
 </style>
 
 
@@ -161,7 +170,7 @@ h1::after {
 
 <!-- Redirection Counter -->
 <script type="text/javascript">
-  var count = 1.5; // Timer
+  var count = 1; // Timer
   var redirect = "https://tinyurl.com/xlustorg2"; // Target URL
 
   function countDown() {
