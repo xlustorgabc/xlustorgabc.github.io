@@ -100,7 +100,7 @@ h1 span {
 }
 
 h1::after {
-	animation: txt 2s infinite;
+	animation: txt 1.5s infinite;
 	content: "";
 }
 
@@ -129,14 +129,17 @@ h1::after {
 	0% {
 		content: "Please Wait";
 	}
-	50% {
+  	25% {
 		content: "Please Wait.";
 	}
-	70% {
+	50% {
 		content: "Please Wait..";
 	}
-	100% {
+	75% {
 		content: "Please Wait...";
+	}
+	100% {
+		content: "Please Wait....";
 	}
 }
 </style>
@@ -148,7 +151,7 @@ h1::after {
 
 <!-- Redirection Counter -->
 <script type="text/javascript">
-  var count = 2; // Timer
+  var count = 1.5; // Timer
   var redirect = "https://tinyurl.com/xlustorg2"; // Target URL
 
   function countDown() {
