@@ -4,184 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>XLUST.ORG</title>
+    <title>XLUST</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
-<body onload="countDown();">
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html,
-body {
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	background: #0b0b14;
-	font-family: 'Inconsolata', monospace;
-	overflow: hidden;
-}
-
-.arc {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	border-top: 2px solid #ffea29;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	animation: rt 2s infinite linear;
-}
-
-.arc::before {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	border-top: 2px solid #8d29ff;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	animation: rt 4s infinite linear reverse;
-	content: "";
-}
-
-.arc::after {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-radius: 50%;
-	border-top: initial;
-	border-left: initial;
-	border-right: initial;
-	animation: cw 1s infinite;
-	content: "";
-	background: #fffafa;
-}
-
-h1 {
-	position: absolute;
-	height: 40px;
-	margin: auto;
-	top: 200px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
-	font-size: 14px;
-	font-weight: lighter;
-	color: white;
-}
-
-h1 span {
-	display: none;
-}
-
-h1::after {
-	animation: txt 1s infinite;
-	content: "";
-}
-
-@keyframes rt {
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes cw {
-	0% {
-		width: 0;
-		height: 0;
-	}
-	75% {
-		width: 40px;
-		height: 40px;
-	}
-	100% {
-		width: 0;
-		height: 0;
-	}
-}
-
-@keyframes txt {
-	0% {
-		content: "Please Wait";
-	}
-  25% {
-		content: "Please Wait.";
-	}
-	50% {
-		content: "Please Wait..";
-	}
-	75% {
-		content: "Please Wait...";
-	}
-	100% {
-		content: "Please Wait....";
-	}
-}
-
-.pump {
-  position: absolute;
-  bottom: 5px;
-  left: calc(50% - 117px);
-}
-
-@media all and (max-width: 768px) {
-  html, body {
-      overflow-x: hidden;
-  }
-  body {
-      position: relative;
-  }
-}
-</style>
-
-
-<div class="arc"></div>
-<h1><span>Please Wait</span></h1>
-
-<div class="pump">
-  <iframe data-aa="1326981" src="//ad.a-ads.com/1326981?size=234x60" scrolling="no" style="width:234px; height:60px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
-</div>
-
-
-<!-- Redirection Counter -->
-<script type="text/javascript">
-  var count = 1; // Timer
-  var redirect = "https://tinyurl.com/xlustorg2"; // Target URL
-
-  function countDown() {
-      if (count > 0) {
-          count--;
-          setTimeout("countDown()", 1000);
-      } else {
-          window.location.href = redirect;
-      }
-  }
-</script>
-
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Muli', sans-serif;
+        }
+        .img {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+        }
+        .img .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .img .avatar img {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img .avatar h2 a {
+            position: absolute;
+            top: calc(40% + 120px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 8px;
+        }
+        .img .continue {
+            position: absolute;
+            top: calc(40% + 190px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            padding: 12px 26px;
+            background-color: green;
+            border-radius: 20px;
+            color: #fff;
+            font-weight: 700;
+        }
+    </style>
+    <div class="img">
+        <div class="overlay"></div>
+        <div class="avatar">
+            <a href="https://tinyurl.com/webxlust" target="_blank">
+                <img src="avatar.png" alt="">
+            </a>
+            <h2><a href="https://tinyurl.com/webxlust" target="_blank">XLUST.ORG</a></h2>
+        </div>
+        <a class="continue" href="https://tinyurl.com/webxlust">CONTINUE</a>
+    </div>
 </body>
 </html>
